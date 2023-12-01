@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Arorotica</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Linden+Hill"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Special+Elite"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio autoplay>
+      <source src="https://files.catbox.moe/v5lb8b.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="chapel-top">
+      <div id="journalwall">
+        <img id="jj1" src="images/jj1.jpg" />
+        <img id="jj2" src="images/jj2.jpg" />
+        <img id="jj3" src="images/deanmed.jpg" />
+        <img id="jj4" src="" />
+        <img
+          id="jj5"
+          src="https://file.garden/ZUceZhp1MTR1vb5u/chapel/deanpolaroid.png"
+        />
+        <img id="jj6" src="/images/cassette.png" />
+        <div id="jj7">
+          <div class="sinner">
+            <p style="font-family: Special Elite">
+              As a whole
+              <span style="text-decoration: underline">Supernatural</span> is my
+              perfect show: The calloused underbelly of America, urban folklore,
+              gore and horror, characters irrevocably severed from society,
+              incest subtext, Christian theology, and two super hot guys. And
+              the show itself may "bad" but what churns underneath the bad
+              acting and cheesy one-liners makes me rock fucking hard.
+              <br /><br />
+              <span style="text-decoration: underline">Dean Winchester</span>
+              may be my character of all time. My madonna and my whore. My
+              dirtbitch. My sweetest sigh and brutal blade. He's overtly
+              masculine (actually painfully so) but paralleled and subtexted to
+              hell with femininity. Burdened with family - to live with a wife's
+              duty and mother's obligation, a son's need and a brother's trust.
+              Fated to a doomed love. Fated to live tragically and die
+              tragically. Fated to triumph but not before falling again and
+              again. <br /><br />
+
+              Disclaimer: I'm a spn purist - I believe the show should've ended
+              at season 5 and the sharp decline in quality after that finale
+              makes it nigh unwatchable. To me spn isn't worth watching past
+              season 6 (which gets a pass because there's just enough loin
+              tingling moments to get through). I wasn't really an og
+              Supernatural fan i.e. Superwholocker. I did watch a good bite of
+              it during the fandom peak out of obligation. It was a case of
+              right people wrong time but now the clocks are ticking in sync.
+            </p>
+          </div>
+        </div>
+        <div id="deantv">
+          <div onclick="rotateGallery()" class="dtv">
+            <img
+              src="images/dean-tv.png"
+              style="width: inherit; height: inherit"
+            />
+          </div>
+          <img src="images/predean.webp" id="DeanGallery" />
+        </div>
+        <img id="jj8" src="images/rosary.png" />
+        <img id="jj9" src="images/hangingdean.png" />
+        <img id="jj10" src="images/grave.jpg" />
+      </div>
+    </div>
+
+    <!-- 
+         <div id="hangd">
+      <img
+        id="hangingdean"
+        src="images/hangingdean.png"
+        style="height: 500px"
+      />
+    </div>
+    
+
+    <div class="chapel-bottom">
+      <img class="botdean one" src="https://files.catbox.moe/j1tyu4.gif" />
+      <div id="deantv">
+        <div onclick="rotateGallery()" class="dtv">
+          <img
+            src="images/dean-tv.png"
+            style="width: inherit; height: inherit"
+          />
+        </div>
+        <img src="images/predean.webp" id="DeanGallery" />
+      </div>
+
+      <img
+        class="botdean two"
+        src="https://file.garden/ZUceZhp1MTR1vb5u/chapel/botdean1.gif"
+      />
+    </div>
+  -->
+    <script>
+      var counter = 0,
+        gallery = [
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean1.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean2.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean3.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean4.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean5.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean6.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean7.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean8.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean9.gif",
+          "https://file.garden/ZUceZhp1MTR1vb5u/chapel/dean10.gif",
+        ],
+        rotateGallery = function () {
+          document.getElementById("DeanGallery").src = gallery[counter];
+          counter++;
+          if (counter >= gallery.length) {
+            counter = 0;
+          }
+        };
+    </script>
+  </body>
+</html>

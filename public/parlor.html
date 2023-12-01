@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/styles/style.css" rel="stylesheet" />
+    <title>Arorotica</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Linden+Hill"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Allura"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Special+Elite"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+  </head>
+  <body>
+    <div class="parlor-container">
+    
+      <div id="flex">
+        <aside id="leftSidebar" >
+          
+          
+          <div class="parlor-button" >
+            <a href="parlor/morsels.html" target="frame">Morsels</a>
+          </div>
+          <div
+            class="parlor-button">
+            <a href="parlor/videostars.html" target="frame">Videostars</a>
+          </div>
+          <div
+            class="parlor-button">
+            <a href="parlor/cinema.html" target="frame">Cinema</a>
+          </div>
+          <div class="parlor-button" >
+            <a href="parlor/toybox.html" target="frame">Toybox</a>
+          </div>
+          <div
+            class="parlor-button"
+          >
+            <a href="parlor/atlas.html" target="frame">Atlas</a>
+          </div>
+          <div class="parlor-button" >
+            <a href="map.html" >Map</a>
+          </div>
+        </aside>
+
+        <div id="parlor-main">
+          <iframe
+            src="parlor/the-parlor.html"
+            height="450px"
+            scrolling="yes"
+            name="frame"
+            id="parlorframe"
+          ></iframe>
+        </div>
+
+        <aside id="rightSidebar">
+          <div class="player">
+            <div class="window">
+              <div class="title-bar">
+                
+                <img class="audioicon" src="/images/audioicon.png"/>
+              </div>
+              <div class="window-body">
+                <div class="flex">
+                  <div id="musicplayer">
+                    <div class="songtitlewindow">
+                      <div class="flex">
+                        <marquee scrollamount="4" class="songtitle"></marquee>
+                      </div>
+                    </div>
+
+                    <div class="seeking">
+                      <div class="current-time">00:00</div>
+
+                      <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="0"
+                        class="seek_slider"
+                        onchange="seekTo()"
+                      />
+
+                      <div class="total-duration">0:00</div>
+                    </div>
+
+                    <table class="controls">
+                      <tr>
+                        <td>
+                          <div class="prev-track" onclick="prevTrack()">
+                            <button><i class="material-icons">chevron_left</i></button>
+                          </div>
+                        </td>
+                        <td>
+                          <div
+                            class="playpause-track"
+                            onclick="playpauseTrack()"
+                          >
+                            <button><i class="material-icons">play_arrow</i></i></button>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="next-track" onclick="nextTrack()">
+                            <button><i class="material-icons">chevron_right</i></i></button>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <audio id="music" src=""></audio>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+
+          <div class="parlor-low">
+            <div style="
+            padding: 40px 40px;  font: .8em Bellefair;
+ line-height: 2.6;">
+              <p>I slept through dawn
+                <br>and when I woke again
+                <br>the sun was pale <br> and
+              tremulous
+              <br> above me</p>
+            </div>
+            
+            <img src="images/doll.png" style="width: 95%; position: absolute; bottom:0;right:0; opacity: .8;">
+          </div>
+          
+
+          
+
+          <!-- 
+            <a id="parlor-home" href="map.html">
+            <div >
+              
+              <img src="images/parlorhome.png" />
+              </div
+          ></a>
+           -->
+          
+
+          
+        </aside>
+        
+
+
+        
+      </div>
+
+      
+    
+
+    <div class="slideshow-container">
+      <div class="quote fade">
+        <p>
+          "Tears were warm, and girls were beautiful, like dreams. I liked movie
+          theaters, the darkness and intimacy, and I liked the deep, sad summer
+          nights."
+        </p>
+        <p>- Haruki Murakami</p>
+      </div>
+
+      <div class="quote fade">
+        <p>“You are the knife I turn inside myself; that is love.”</p>
+        <p>- Franz Kafka</p>
+      </div>
+      <div class="quote fade">
+        <p>
+          "I couldn’t even tell you about anything that I saw. I didn’t talk to
+          anybody. The cicadas kept dying outside, and as I dreamed, my mouth
+          grew thick and venomous with silence."
+        </p>
+        <p>- Yiwei Chai</p>
+      </div>
+
+      <div class="quote fade">
+        <p>"how dreamlike things are, how skinned of flesh and blood…"</p>
+        <p>- Virginia Woolf</p>
+      </div>
+
+      <div class="quote fade">
+        <p>
+          "Sometimes I get up early and even my soul is wet. Far away the sea
+          sounds and resounds. "
+        </p>
+        <p>- Pablo Neruda</p>
+      </div>
+
+      <div class="quote fade">
+        <p>
+          "...lives eating lives, the unstoppable chew, and I wondered if any of
+          those vacationing people feel all the blood rushing under the surface,
+          and I wondered if the fleshy, dying underside of the ocean is what
+          they’re really after as they stare—that ferocious pulse under all
+          things placid. "
+        </p>
+        <p>- Catherine Lacey</p>
+      </div>
+
+      <div class="quote fade">
+        <p>
+          "I dreamt of you last night—as if I was playing the piano and you were
+          turning the pages for me. "
+        </p>
+        <p>- Vladimir Nabokov</p>
+      </div>
+      <div class="quote fade">
+        <p>
+          "A year like this, passes so strangely, somewhere between sorrow and
+          bliss"
+        </p>
+        <p>- Florence Welch</p>
+      </div>
+    </div>
+
+  </div>
+    
+    <script src="scripts/main.js"></script>
+    <script>
+      // initiate variables
+      let track_name = document.querySelector(".songtitle");
+      
+      let playpause_btn = document.querySelector(".playpause-track");
+      let next_btn = document.querySelector(".next-track");
+      let prev_btn = document.querySelector(".prev-track");
+      
+      let seek_slider = document.querySelector(".seek_slider");
+      let curr_time = document.querySelector(".current-time");
+      let total_duration = document.querySelector(".total-duration");
+      
+      let track_index = 0;
+      let isPlaying = false;
+      let updateTimer;
+      
+      // create new audio element
+      let curr_track = document.getElementById("music");
+      
+      //
+      // DEFINE YOUR SONGS HERE!!!!!
+      // MORE THAN FOUR SONGS CAN BE ADDED!!
+      // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+      // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+      let track_list = [
+          {
+              name:"Red Sex - Vessel",
+              path:"https://files.catbox.moe/bnowvr.mp3"
+          },
+          {
+              name:"Vanity - Mica Levi",
+              path: "https://files.catbox.moe/x8gqys.mp3"
+          },
+          {
+              name:"In Every Dream Home A Heartache - Roxy Music",
+              path: "https://files.catbox.moe/ee6oxm.mp3"
+          },
+          {
+              name:"Moscow Nights - Red Army Choir",
+              path:"https://files.catbox.moe/yxt49m.mp3"
+          },
+          {
+              name:"Promise (Reprise) - Silent Hill Ost",
+              path:"https://files.catbox.moe/7hh6oq.mp3"
+          },
+          {
+              name:"Beau Soir - Yo-Yo Ma, Kathryn Stott, Claude Debussy",
+              path:"https://files.catbox.moe/6epz8k.mp3"
+          },
+          {
+              name:"Scenery - Ashmute",
+              path:"https://files.catbox.moe/9vm96l.mp3"
+          },
+          {
+              name:"Abacadabra - Brown Eyed Girls",
+              path:"https://files.catbox.moe/xabu67.mp3"
+          },
+          {
+              name:"Uncover - Loona",
+              path:"https://files.catbox.moe/75nyxt.mp3"
+          },
+          {
+              name:"I'm Your Man - Mitski",
+              path:"https://files.catbox.moe/l8x2xl.mp3"
+          }
+          ,
+          {
+              name:"CHOCOLAT - Tcy Force",
+              path:"https://files.catbox.moe/r7pn9y.mp3"
+          }
+      ];
+      //
+      //
+      //
+      //
+      //
+      
+      function loadTrack(track_index) {
+          clearInterval(updateTimer);
+          resetValues();
+      
+          // load a new track
+          curr_track.src = track_list[track_index].path;
+          curr_track.load();
+      
+          // update details of the track
+          track_name.textContent = (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+      
+          // set an interval of 1000 milliseconds for updating the seek slider
+          updateTimer = setInterval(seekUpdate, 1000);
+      
+          // move to the next track if the current one finishes playing 
+          curr_track.addEventListener("ended", nextTrack);
+      }
+      
+      // reset values
+      function resetValues() {
+          curr_time.textContent = "0:00";
+          total_duration.textContent = "0:00";
+          seek_slider.value = 0;
+      }
+      
+      // checks if song is playing
+      function playpauseTrack() {
+          if (!isPlaying) playTrack();
+          else pauseTrack();
+      }
+      
+      // plays track when play button is pressed
+      function playTrack() {
+          curr_track.play();
+          isPlaying = true;
+      
+          // replace icon with the pause icon
+          playpause_btn.innerHTML = '<button><i class="material-icons">pause</i></i></button>';
+      }
+      
+      // pauses track when pause button is pressed
+      function pauseTrack() {
+          curr_track.pause();
+          isPlaying = false;
+      
+          // replace icon with the play icon
+          playpause_btn.innerHTML = '<button><i class="material-icons">play_arrow</i></i></button>';
+      }
+      
+      // moves to the next track
+      function nextTrack() {
+          if (track_index < track_list.length - 1)
+              track_index += 1;
+          else track_index = 0;
+          loadTrack(track_index);
+          playTrack();
+      }
+      
+      // moves to the previous track
+      function prevTrack() {
+          if (track_index > 0)
+              track_index -= 1;
+          else track_index = track_list.length;
+          loadTrack(track_index);
+          playTrack();
+      }
+      
+      // seeker slider
+      function seekTo() {
+          seekto = curr_track.duration * (seek_slider.value / 100);
+          curr_track.currentTime = seekto;
+      }
+      
+      function seekUpdate() {
+          let seekPosition = 0;
+      
+          // check if the current track duration is a legible number
+          if (!isNaN(curr_track.duration)) {
+              seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+              seek_slider.value = seekPosition;
+      
+          // calculate the time left and the total duration
+          let currentMinutes = Math.floor(curr_track.currentTime / 60);
+          let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+          let durationMinutes = Math.floor(curr_track.duration / 60);
+          let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+      
+          // adding a zero to the single digit time values
+          if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+          if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+          if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+          if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+      
+          curr_time.textContent = currentMinutes + ":" + currentSeconds;
+          total_duration.textContent = durationMinutes + ":" + durationSeconds;
+        }
+      }
+      
+      // load the first track in the tracklist
+      loadTrack(track_index);
+      </script>
+       
+  </body>
+</html>

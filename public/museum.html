@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Arorotica</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio loop autoplay>
+      <source
+        src="https://file.garden/ZUceZhp1MTR1vb5u/museum/rothko.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <div align="center" class="museumcont">
+      <h1 style="font-family: Cinzel">The Museum</h1>
+    </div>
+    <div align="center" class="museum">
+      <div id="museumbutton">
+        <input
+          class="museum-button"
+          type="button"
+          value="Take the Tour"
+          onclick="randomImg();"
+        />
+      </div>
+
+      <div id="quote"></div>
+    </div>
+
+    <script type="text/javascript">
+      function randomImg() {
+        var quotes = [
+          {
+            text: "Takato Yamamoto, Saint Sebastian. 2005",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/sebastian.jpg",
+          },
+          {
+            text: "Takato Yamamoto, Sham Rose. 2018",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/shamrose.jpg",
+          },
+          {
+            text: "Suehiro Maruo",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/maruo1.jpg",
+          },
+          {
+            text: "Suehiro Maruo",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/maruo3.jpg",
+          },
+          {
+            text: "Yuko Tatsushima",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/yuko.jpg",
+          },
+          {
+            text: "Yoshitaka Amano",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/yoshitaka1.png",
+          },
+          {
+            text: "Yoshitaka Amano",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/yoshitaka2.png",
+          },
+          {
+            text: "Fuyuko Matsui",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/matsui1",
+          },
+          {
+            text: "Fuyuko Matsui, Carved Limbs on an Altar. 2007",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/matsui2",
+          },
+          {
+            text: "Masaaki Sasamoto",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/sasamoto.jpg",
+          },
+          {
+            text: "Shintaro Kago",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/kago1.jpg",
+          },
+          {
+            text: "Keiichi Takasawa, Woman and Woman Series. 1914-1984",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/womanandwoman.jpg",
+          },
+          {
+            text: "Tsukioka Yoshitoshi, Mori Rikimaru and Two Severed Heads. 1868",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/severedheads.jpg",
+          },
+          {
+            text: "Hans Makart, Death of Cleopatra. 1875",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/maria.png",
+          },
+          {
+            text: "Jan de Baen, The Corpses of the De Witt Brothers. 1675",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/dewitt.jpg",
+          },
+          {
+            text: "James Sant, Courage, Anxiety and Despair - Watching the Battle. 1850",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/watchingthebattle.jpg",
+          },
+          {
+            text: "Ilya Repin, Ivan the Terrible and His Son Ivan. 1885",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/ivan.jpg",
+          },
+          {
+            text: "Nicola Samori, Il rigore di Girolamo. 2016",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/samori.png",
+          },
+          {
+            text: "Catherin Hyde, The River's Deep Scent Rising. 2014",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/scentrising.jpg",
+          },
+          {
+            text: "Roberto Ferri, Fallen Angel. 2011",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/fallen.jpg",
+          },
+          {
+            text: "Johann Michael Rottmayr, The Suicide of Cato. 1692",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/maria.png",
+          },
+          {
+            text: "Francisco Goya, Saturn Devouring His Son. 1820",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/saturn.jpg",
+          },
+          {
+            text: "Bartolomeo Bimbi, Two-Headed Lamb. 1721",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/lamb.jpg",
+          },
+          {
+            text: "Hieronymous Bosch, Garden of Earthy Delights. 1515",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/gardendelights.jpg",
+          },
+          {
+            text: "Hieronymous Bosch, Christ in Limbo. 1575",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/limbo.jpg",
+          },
+          {
+            text: "Jose de Ribera, Head of St. John the Baptist. 1644",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/headofjohn.jpg",
+          },
+          {
+            text: "Theodor von Holst, Charon. 1837",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/charon.jpg",
+          },
+
+          {
+            text: "Guido Cagnacci, Maria Magdelene. 1601",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/cleopatra.jpg",
+          },
+          {
+            text: "Egon Schiele, Dead Mother. 1910",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/schielemother",
+          },
+          {
+            text: "John Singer Sargent, Pomegranates, Majorca. 1908",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/pomegranates.jpg",
+          },
+          {
+            text: "William-Adolphe Bouguereau, Dante and Virgil. 1850",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/inhell.jpg",
+          },
+          {
+            text: "Francis Bacon, Two Figures. 1953",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/twofigures.jpg",
+          },
+          {
+            text: "Francis Bacon, Figure with Meat. 1954",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/withmeat.jpg",
+          },
+          {
+            text: "Francis Bacon, Screaming Pope. 1953",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/pope.jpg",
+          },
+          {
+            text: "Dean Cornwell, The Other Side. 1918",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/otherside.jpg",
+          },
+          {
+            text: "James Hampton's Throne 1909-1964",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/hampton.jpg",
+          },
+          {
+            text: "Rui Matsunaga, On the Moon. 2019",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/onthemoon.png",
+          },
+          {
+            text: "Valerius de Saedeleer, Paysage d'Hiver. 1931",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/winter.jpg",
+          },
+          {
+            text: "Wayne Barlowe, The Molars of Leviathan",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/molars.jpg",
+          },
+          {
+            text: "August Malmstrom, Dancing Fairies. 1866",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/dancingfairies",
+          },
+          {
+            text: "Ana Mario Pacheco, Dark Night of the Soul. 1999",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/pacheco.jpg",
+          },
+          {
+            text: "Joel-Peter Witkin, Feast of Fools. 1991",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/witkin.jpg",
+          },
+          {
+            text: "David Rappeneau, Ecco and Ecco. ",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/rappeneau.jpg",
+          },
+          {
+            text: "Beatrix Potter",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/potter.jpg",
+          },
+          {
+            text: "Xia Xiaowan, Man and Woman. 2007",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/xiaowan.jpg",
+          },
+          {
+            text: "Odd Nerdrum, Drifting. 2006",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/nerdrum.jpg",
+          },
+          {
+            text: "Odd Nerdrum, Cannibals. 2005",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/nerdrum2.jpg",
+          },
+          {
+            text: "Hanna Kim",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/hannakim1",
+          },
+          {
+            text: "Hanna Kim",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/hannakim2.jpg",
+          },
+          {
+            text: "Pierre Amédée Marcel-Beronneau, Woman with a Snake. 1906",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/snake.png",
+          },
+          {
+            text: "twt: @zhiruiwang5, 归家。",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/insist.jpg",
+          },
+
+          {
+            text: "twt: @filamen0112",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/kurt.jpg",
+          },
+          {
+            text: "twt: @myojo_0120",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/perv.jpg",
+          },
+          {
+            text: "twt: @myojo_0120",
+            img: "https://file.garden/ZUceZhp1MTR1vb5u/museum/shibari.jpg",
+          },
+        ];
+
+        var quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+        document.getElementById("quote").innerHTML =
+          '<img src="' + quote.img + '">' + "<h2>" + quote.text + "</h2>";
+      }
+    </script>
+  </body>
+</html>
