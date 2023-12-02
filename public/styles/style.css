@@ -1497,8 +1497,8 @@ h1 {
 
 .parlor-frame h3 {
   text-align: center;
-  font-size: 0.9em;
-  font-family: Bellefair;
+
+  font: 0.9em Bellefair;
   margin-bottom: 10px;
 }
 
@@ -1507,15 +1507,17 @@ h1 {
   padding-top: 20px;
 }
 
-.parlor-dates {
-  font-size: 0.8em;
-  font-family: Bellefair;
-  font-weight: 400 !important;
-  padding: 0 20px;
+.parlor-dates a {
+  font: 0.65em Bellefair normal;
+
+  padding: 0 15px;
 }
 
 .parlor-entry {
   padding: 30px;
+}
+.parlor-entry > div {
+  margin-bottom: 100px;
 }
 
 .parlor-entry li {
