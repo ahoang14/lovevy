@@ -2282,6 +2282,10 @@ input.seek_slider {
   grid-row: 6/7;
 }
 
+.music-left {
+  position: relative;
+}
+
 .musicbox {
   margin: 30px;
   position: relative;
@@ -2493,8 +2497,8 @@ input.seek_slider {
 
 .playplay {
   position: absolute;
-  left: 545px;
-  bottom: 25px;
+  left: -30px;
+  top: 470px;
   transform: rotate(270deg);
   font: 1.2em Cinzel;
 }
