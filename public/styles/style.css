@@ -1961,7 +1961,7 @@ input.seek_slider {
 }
 
 #jj7 {
-  background: url(/images/dirtypaper.png) no-repeat center/contain;
+  background: url(../images/dirtypaper.png) no-repeat center/contain;
   position: absolute;
   width: 400px;
   height: 300px;
@@ -2287,7 +2287,7 @@ input.seek_slider {
   position: relative;
   width: 1280px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 260px);
   grid-gap: 10px;
 }
@@ -2493,7 +2493,7 @@ input.seek_slider {
 
 .playplay {
   position: absolute;
-  left: 365px;
+  left: 545px;
   bottom: 25px;
   transform: rotate(270deg);
   font: 1.2em Cinzel;
@@ -2552,4 +2552,15 @@ input.seek_slider {
   top: 0;
   z-index: 9999;
   background-color: #000;
+}
+
+.hoverimg {
+  filter: saturate(0.1);
+  display: inline;
+
+  transition: 0.5s ease;
+}
+
+.hoverimg:hover {
+  filter: saturate(1);
 }
