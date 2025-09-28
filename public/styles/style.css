@@ -193,7 +193,6 @@ a:hover {
 @media (hover: none) {
   .hide {
     display: block;
-    color: #82192f;
     text-align: center;
     font-size: 1.2em;
     font-style: italic;
@@ -206,7 +205,6 @@ a:hover {
 
 .main-header:hover + .hide {
   display: block;
-  color: #82192f;
   text-align: center;
   font-size: 1.2em;
   font-style: italic;
@@ -2212,7 +2210,6 @@ input.seek_slider {
   border: 8px solid;
   padding: 10px;
   border-image: url(../images/readingsborder.png) 70 round;
-  background-color: #82192f;
 }
 
 .doll-gallery > div {
