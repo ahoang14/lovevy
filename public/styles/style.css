@@ -2183,6 +2183,7 @@ input.seek_slider {
 .desc {
   padding: 15px;
   padding-right: 40px;
+  padding-top: 30px;
   color: #4f4b4b;
   align-self: flex-start;
 }
