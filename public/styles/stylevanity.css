@@ -17,7 +17,7 @@ VANITY
 
 .tooltiptext {
   visibility: hidden; /* Hidden by default */
-  width: 200px;
+  width: 150px;
   height: 200px;
   background-color: black;
   text-align: center;
@@ -101,5 +101,5 @@ h4 {
 
 .perf-slide img {
   height: 150px;
-  margin: 0 40px;
+  margin: 0 30px;
 }
