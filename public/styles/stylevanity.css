@@ -1,0 +1,105 @@
+/* 
+
+
+VANITY
+
+
+
+
+*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: ease-in-out 0.5s, transform 0.5s;
+}
+
+.tooltiptext {
+  visibility: hidden; /* Hidden by default */
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  text-align: center;
+  padding: 15px;
+  border-radius: 6px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.tooltip img {
+  filter: saturate(0.2);
+  position: relative;
+}
+
+h4 {
+  font-size: 12px;
+  font-family: Cinzel;
+  margin-bottom: 2px;
+}
+
+.perf span {
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}
+
+@keyframes scroll-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  } /* Adjust based on content width */
+}
+
+.perf {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 30px;
+}
+.perf-slide {
+  transition: transform 0.5s ease-out;
+}
+.perf:before,
+.perf:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.perf:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+}
+
+.perf:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
+}
+
+.perf:hover .perf-slide {
+  animation-play-state: paused;
+  transition: transform 1s ease-out;
+}
+
+.perf-slide {
+  display: inline-block;
+  animation: scroll-horizontal 20s linear infinite;
+}
+
+.perf-slide img {
+  height: 150px;
+  margin: 0 40px;
+}
