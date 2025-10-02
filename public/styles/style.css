@@ -2162,7 +2162,7 @@ input.seek_slider {
   transform: translate(-50%, -50%);
   width: 850px;
   height: 580px;
-  background: url(/public/images/dollbg.png) no-repeat center/contain;
+  background: url(/public/images/doll/dollbg.png) no-repeat center/contain;
   display: flex;
   justify-content: center;
   align-items: center;
