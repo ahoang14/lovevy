@@ -1007,6 +1007,11 @@ img.diarydiv {
   top: 288px;
   left: -490px;
 }
+#nav-outer a:nth-of-type(12) {
+  position: relative;
+  top: 180px;
+  left: 20px;
+}
 
 #nav-outer a {
   transition: all 0.7s ease-out;
@@ -1045,7 +1050,7 @@ img.diarydiv {
 }
 
 #map-outer:has(a:nth-of-type(8):hover) {
-  background-image: url(../images/mapdollhouse.jpg);
+  background-image: url(../images/mapdollhouse.png);
 }
 
 #map-outer:has(a:nth-of-type(9):hover) {
@@ -1058,6 +1063,9 @@ img.diarydiv {
 
 #map-outer:has(a:nth-of-type(11):hover) {
   background-image: url(../images/mapletters.jpg);
+}
+#map-outer:has(a:nth-of-type(12):hover) {
+  background-image: url(../images/mapvanity.png);
 }
 
 .polaroid {
