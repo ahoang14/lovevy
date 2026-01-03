@@ -2542,3 +2542,32 @@ input.seek_slider {
 .hoverimg:hover {
   filter: saturate(1);
 }
+
+//formatting//
+
+div.duo {
+  display: flex;
+  justify-content: center;
+}
+div.duo > * {
+  width: 50%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+div.trio {
+  display: flex;
+  justify-content: center;
+}
+div.trio > * {
+  flex: 1; /* All items grow equally to fill space */
+  /* Or flex: 1 1 0; for shrinking and growing */
+  min-width: 100px; /* Prevents them from shrinking too small */
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
