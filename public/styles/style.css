@@ -870,7 +870,7 @@ img.diarydiv {
   height: inherit;
   padding: 10px 100px;
   font-family: Bellefair;
-  font-size: 1em;
+  font-size: 0.8em;
   line-height: 1.4em;
   border: #f5f5f5 solid;
 }
@@ -1012,6 +1012,11 @@ img.diarydiv {
   top: 180px;
   left: 20px;
 }
+#nav-outer a:nth-of-type(13) {
+  position: relative;
+  top: 145px;
+  left: -460px;
+}
 
 #nav-outer a {
   transition: all 0.7s ease-out;
@@ -1066,6 +1071,9 @@ img.diarydiv {
 }
 #map-outer:has(a:nth-of-type(12):hover) {
   background-image: url(../images/mapvanity.png);
+}
+#map-outer:has(a:nth-of-type(13):hover) {
+  background-image: url(../images/maparchives.png);
 }
 
 .polaroid {
