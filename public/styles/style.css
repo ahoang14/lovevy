@@ -1631,7 +1631,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 .atlas-column .column {
   flex: 1;
-  line-height: 1.7em;
+  line-height: 1.6em;
 }
 
 .atlas-column.sites h4 {
@@ -2569,6 +2569,7 @@ div.duo > * {
 div.trio {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 div.trio > * {
   flex: 1; /* All items grow equally to fill space */
