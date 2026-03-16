@@ -2569,7 +2569,6 @@ div.duo > * {
 div.trio {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
 div.trio > * {
   flex: 1; /* All items grow equally to fill space */
