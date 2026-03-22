@@ -2551,7 +2551,7 @@ input.seek_slider {
   filter: saturate(1);
 }
 
-//formatting//
+/*formatting*/
 
 div.duo {
   display: flex;
@@ -2578,4 +2578,9 @@ div.trio > * {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+img.bcen {
+  display: block !important;
+  margin: 0 auto !important;
 }
