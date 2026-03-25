@@ -230,12 +230,37 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+.mhover-link {
+  position: relative; /* Context for the image */
+  text-decoration: none;
+}
+
+.mhover-image {
+  display: none; /* Hide image by default */
+  position: absolute;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  z-index: 10;
+  opacity: 0.1; /* Initial opacity (e.g., 50% transparent) */
+  transition: opacity 1s ease-in-out;
+}
+.mhover-image:hover {
+  opacity: 1;
+}
+.mhover-link:hover .mhover-image {
+  display: block;
+}
 .maincont {
   width: 100vw;
   position: relative;
   display: inline-block;
 }
-.maincont img {
+
+.maincont .mainimg {
   display: block; /* Removes default bottom margin issues with inline images */
   width: 100%; /* Makes image responsive */
   height: auto;
